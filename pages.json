@@ -1,0 +1,102 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+			}
+		}
+	    ,{
+            "path" : "pages/cart/cart",
+            "style" : {
+				"navigationBarTitleText":"购物车"
+			}
+        }
+        ,{
+            "path" : "pages/member/member",
+            "style" : {
+				"navigationBarTitleText":"会员"
+			}
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" : {
+				"navigationBarTitleText":"新闻资讯"
+			}
+        }
+        ,{
+            "path" : "pages/goods/goods",
+            "style" : {
+				"navigationBarTitleText":"商品列表",
+				"enablePullDownRefresh":true
+			}
+        }
+        ,{
+            "path" : "pages/contact/contact",
+            "style" : {
+				"navigationBarTitleText":"联系我们"
+			}
+        }
+        ,{
+            "path" : "pages/pics/pics",
+            "style" : {
+				"navigationBarTitleText":"社区图片"
+			}
+        }
+        ,{
+            "path" : "pages/news-detail/news-detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goods-detail/goods-detail",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "月白商城",
+		"navigationBarBackgroundColor": "#b50e03",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#ccc",
+		"selectedColor":"#b50e03",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath": "pages/index/index",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-active.png"
+			},
+			{
+				"text":"资讯",
+				"pagePath": "pages/news/news",
+				"iconPath":"static/icon/news.png",
+				"selectedIconPath":"static/icon/news-active.png"
+			},
+			{
+				"text":"购物车",
+				"pagePath": "pages/cart/cart",
+				"iconPath":"static/icon/cart.png",
+				"selectedIconPath":"static/icon/cart-active.png"
+			},
+			{
+				"text":"会员",
+				"pagePath": "pages/member/member",
+				"iconPath":"static/icon/member.png",
+				"selectedIconPath":"static/icon/member-active.png"
+			}
+			
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
